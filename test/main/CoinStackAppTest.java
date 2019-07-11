@@ -33,4 +33,11 @@ public class CoinStackAppTest {
         Assert.assertEquals(expectedNumFlipRotateOperations, CoinStackApp.getNumFlipRotateOperations(coins));
     }
 
+    @Test
+    public void test_getNumFlipRotateOperations_10_coins_alreadyArranged(){
+        Integer[] coins = new Integer[]{0,0,0,0,0,0,0,0,0,0};
+        int expectedNumFlipRotateOperations = 0;
+        Assert.assertEquals(expectedNumFlipRotateOperations, CoinStackApp.getNumFlipRotateOperations(coins));
+    }
+
 }
